@@ -1,0 +1,29 @@
+.pulseBox{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:10px;
+}
+
+#pulseBtn{
+  width:46px;
+  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.pulseCircle{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:radial-gradient(circle, #9b5cff, #4a1fa3);
+  animation:pulse 1.8s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);opacity:1}
+  50%{transform:scale(1.25);opacity:.7}
+  100%{transform:scale(1);opacity:1}
+}
